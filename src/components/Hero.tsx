@@ -1,3 +1,4 @@
+
 import { FC } from "react";
 
 interface HeroProps {
@@ -6,7 +7,7 @@ interface HeroProps {
 
 const Hero: FC<HeroProps> = ({ imageUrl }) => {
   return (
-    <div className="relative h-screen w-full bg-black overflow-hidden">
+    <div className="relative h-screen w-full bg-black overflow-hidden group">
       <div 
         className="absolute inset-0 bg-cover bg-center h-full w-full"
         style={{ 
@@ -15,7 +16,7 @@ const Hero: FC<HeroProps> = ({ imageUrl }) => {
           filter: 'brightness(0.8)'
         }}
       />
-      <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition-all duration-300" />
+      <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300" />
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center px-4">
           <h1 className="text-white text-5xl md:text-7xl font-bold tracking-wider mb-4">VASEU</h1>
