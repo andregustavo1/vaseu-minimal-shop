@@ -1,4 +1,3 @@
-
 import { ShoppingCart, User, Search, Menu } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -17,10 +16,10 @@ const Header = () => {
   
   return (
     <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 group 
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-400 group 
         ${isHomePage ? 'bg-transparent hover:bg-white' : 'bg-white border-b border-gray-200'}`}
     >
-      <div className="container mx-auto px-4 py-6 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-5 flex justify-between items-center">
         {/* Logo */}
         <Link 
           to="/" 
