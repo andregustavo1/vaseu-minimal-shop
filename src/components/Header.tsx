@@ -16,7 +16,7 @@ const Header = () => {
   
   return (
     <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 group 
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-400 group 
         ${isHomePage ? 'bg-transparent hover:bg-white' : 'bg-white border-b border-gray-200'}`}
     >
       <div className="container mx-auto px-4 py-5 flex justify-between items-center">
@@ -33,22 +33,28 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <Link 
             to="/shop" 
-            className={`${textColor} transition-colors duration-300 text-sm uppercase tracking-wider
-              ${isHomePage ? 'group-hover:text-black hover:!text-gray-600' : hoverColor}`}
+            className={`${textColor} transition-colors duration-300 text-sm uppercase tracking-wider relative
+              ${isHomePage ? 'group-hover:text-black hover:!text-gray-600' : hoverColor}
+              after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px]
+              after:transition-all after:duration-300 after:bg-current hover:after:w-full`}
           >
             Shop
           </Link>
           <Link 
             to="/collection" 
-            className={`${textColor} transition-colors duration-300 text-sm uppercase tracking-wider
-              ${isHomePage ? 'group-hover:text-black hover:!text-gray-600' : hoverColor}`}
+            className={`${textColor} transition-colors duration-300 text-sm uppercase tracking-wider relative
+              ${isHomePage ? 'group-hover:text-black hover:!text-gray-600' : hoverColor}
+              after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px]
+              after:transition-all after:duration-300 after:bg-current hover:after:w-full`}
           >
             Collection
           </Link>
           <Link 
             to="/about" 
-            className={`${textColor} transition-colors duration-300 text-sm uppercase tracking-wider
-              ${isHomePage ? 'group-hover:text-black hover:!text-gray-600' : hoverColor}`}
+            className={`${textColor} transition-colors duration-300 text-sm uppercase tracking-wider relative
+              ${isHomePage ? 'group-hover:text-black hover:!text-gray-600' : hoverColor}
+              after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px]
+              after:transition-all after:duration-300 after:bg-current hover:after:w-full`}
           >
             About
           </Link>
