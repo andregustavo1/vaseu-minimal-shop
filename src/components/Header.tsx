@@ -16,18 +16,22 @@ const Header = () => {
   
   return (
     <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-400 group 
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 group 
         ${isHomePage ? 'bg-transparent hover:bg-white' : 'bg-white border-b border-gray-200'}`}
     >
-      <div className="container mx-auto px-4 py-5 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link 
-          to="/" 
-          className={`${textColor} text-2xl font-bold tracking-wider transition-colors duration-300
-            ${isHomePage ? 'group-hover:text-black' : ''}`}
-        >
-          VASEU
-        </Link>
+        to="/" 
+        className="transition-colors duration-300"
+      >
+        <img 
+          src="/img/logo.png" 
+          alt="VASEU Logo" 
+          className={`h-16 w-auto transition-transform duration-300 
+            ${isHomePage ? 'invert group-hover:invert-0' : 'invert-0'}`}
+        />
+      </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">

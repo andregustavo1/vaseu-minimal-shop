@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-black">
       <Header />
-      <Hero imageUrl="/lovable-uploads/7c5a40ad-a074-4998-97b9-6b636ac818d9.png" />
+      <Hero imageUrl="/img/hero.png" />
       <Footer />
     </div>
   );

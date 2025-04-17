@@ -4,32 +4,29 @@ import { Separator } from "./ui/separator";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#111] text-white py-6">
+    <footer className="bg-[#111] text-white py-2 absolute bottom-0 w-full">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap items-center justify-between gap-4">
           {/* Exchange and Return */}
           <div className="flex items-center gap-2">
-            <ShieldCheck size={18} className="text-gray-400" />
+            <ShieldCheck size={14} className="text-gray-400" />
             <div>
-              <h3 className="text-sm font-medium uppercase tracking-wider">Troca e Devolução</h3>
-              <p className="text-xs text-gray-400">Em até 7 dias úteis</p>
+              <p className="text-xs text-gray-400">Troca e Devolução em até 7 dias úteis</p>
             </div>
           </div>
 
           {/* Customer Service - Email */}
           <div className="flex items-center gap-2">
-            <Mail size={18} className="text-gray-400" />
+            <Mail size={14} className="text-gray-400" />
             <div>
-              <h3 className="text-sm font-medium uppercase tracking-wider">Email</h3>
               <p className="text-xs text-gray-400">contato@vaseu.com</p>
             </div>
           </div>
 
           {/* Customer Service - Phone */}
           <div className="flex items-center gap-2">
-            <Phone size={18} className="text-gray-400" />
+            <Phone size={14} className="text-gray-400" />
             <div>
-              <h3 className="text-sm font-medium uppercase tracking-wider">Telefone</h3>
               <p className="text-xs text-gray-400">(11) 9999-9999</p>
             </div>
           </div>
@@ -48,7 +45,7 @@ const Footer = () => {
             <div className="flex items-center gap-2 text-gray-400 text-xs">
               <Info size={14} />
               <span>CNPJ: 00.000.000/0001-00</span>
-              <span>&copy; 2024 VASEU</span>
+              <span>&copy; 2025 VASEU</span>
             </div>
           </div>
         </div>
