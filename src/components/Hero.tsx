@@ -1,6 +1,6 @@
 
 import { FC } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 interface HeroProps {
   imageUrl: string;
@@ -20,7 +20,7 @@ const Hero: FC<HeroProps> = ({ imageUrl }) => {
       <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-20 transition-all duration-300" />
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center px-4">
-          <h1 className="text-white text-3xl md:text-7xl font-bold tracking-wider mb-4 font-montserrat">DROP `1LUMINATE</h1>
+          <h1 className="text-white text-3xl md:text-7xl font-bold tracking-wider mb-4">DROP `1LUMINATE</h1>
 
           <Link
             to="/shop"
@@ -29,6 +29,8 @@ const Hero: FC<HeroProps> = ({ imageUrl }) => {
               Shop Now
             </button>
           </Link>
+
+
         </div>
       </div>
     </div>
