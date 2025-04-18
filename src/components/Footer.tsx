@@ -13,36 +13,33 @@ const Footer = () => {
           {/* Exchange and Return */}
           <div className="flex items-center gap-2">
             <ShieldCheck size={14} className={`${isMobile ? 'text-white' : 'text-gray-400'}`} />
-            <div className="flex gap-8">
+            <div>
               <p className={`text-xs ${isMobile ? 'text-white' : 'text-gray-400'}`}>
-                Troca e Devolução
-              </p>
-
-              <p className={`text-xs flex sm:hidden items-center gap-2 ${isMobile ? 'text-white' : 'text-gray-400'}`}>
-                <Mail size={14} className={`${isMobile ? 'text-white' : 'text-gray-400'}`} />
-                Contato
+                Troca e Devolução em até 7 dias úteis
               </p>
             </div>
           </div>
 
+          {/* Contact Info Group - Email and Phone */}
+          <div className="flex items-center gap-4">
             {/* Email */}
-            <div className="items-center gap-2 hidden sm:flex">
+            <div className="flex items-center gap-2">
               <Mail size={14} className={`${isMobile ? 'text-white' : 'text-gray-400'}`} />
               <p className={`text-xs ${isMobile ? 'text-white' : 'text-gray-400'}`}>
                 contato@vaseu.com
               </p>
             </div>
-
             {/* Phone */}
-            <div className="items-center gap-2 hidden sm:flex">
+            <div className="flex items-center gap-2">
               <Phone size={14} className={`${isMobile ? 'text-white' : 'text-gray-400'}`} />
               <p className={`text-xs ${isMobile ? 'text-white' : 'text-gray-400'}`}>
                 (11) 9999-9999
               </p>
             </div>
+          </div>
 
           {/* Instagram */}
-          <div className="flex items-center gap-2 hidden sm:flex">
+          <div className="flex items-center gap-2">
             <Instagram size={14} className={`${isMobile ? 'text-white' : 'text-gray-400'}`} />
             <a 
               href="https://www.instagram.com/vaseu_company/" 
@@ -56,7 +53,7 @@ const Footer = () => {
 
           {/* Payment Methods */}
           <div className="flex items-center gap-2">
-            <CreditCard size={16} className={`${isMobile ? 'text-white' : 'text-gray-400'}`} />
+            <CreditCard size={18} className={`${isMobile ? 'text-white' : 'text-gray-400'}`} />
             <div className="flex gap-1">
               <span className={`text-xs ${isMobile ? 'bg-transparent text-white' : 'bg-gray-700'} px-2 py-0.5 rounded`}>
                 Visa
@@ -77,9 +74,9 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             <Info size={14} className={`${isMobile ? 'text-white' : 'text-gray-400'}`} />
             <span className={`text-xs ${isMobile ? 'text-white' : 'text-gray-400'}`}>
-              CNPJ: 53.416.490/0001-78
+              CNPJ: 00.000.000/0001-00
             </span>
-            <span className={`text-xs ml-2 ${isMobile ? 'text-white' : 'text-gray-400'}`}>
+            <span className={`text-xs ${isMobile ? 'text-white' : 'text-gray-400'}`}>
               &copy; 2025 VASEU
             </span>
           </div>
