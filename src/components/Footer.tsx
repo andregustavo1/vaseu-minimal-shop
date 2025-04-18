@@ -18,7 +18,7 @@ const Footer = () => {
                 Troca e Devolução
               </p>
 
-              <p className={`text-xs flex items-center gap-2 ${isMobile ? 'text-white' : 'text-gray-400'}`}>
+              <p className={`text-xs flex sm:hidden items-center gap-2 ${isMobile ? 'text-white' : 'text-gray-400'}`}>
                 <Mail size={14} className={`${isMobile ? 'text-white' : 'text-gray-400'}`} />
                 Contato
               </p>
