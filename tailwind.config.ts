@@ -2,9 +2,6 @@ import type { Config } from "tailwindcss";
 
 export default {
 	darkMode: ["class"],
-	fontFamily: {
-		sans: ["Archivo", "sans-serif"],
-	},
 	content: [
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
@@ -21,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ["Archivo", "sans-serif"],
+				montserrat: ["Montserrat", "sans-serif"],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
