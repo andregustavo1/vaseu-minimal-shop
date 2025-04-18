@@ -7,14 +7,14 @@ const Shop = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <div className="pt-[76px] pb-16">
-        <div className="container mx-auto px-1">
+        <div className="container mx-auto px-1 mt-1">
           <div className="flex items-center justify-between px-3">
             <h1 className="text-sm md:text-4xl">SHOP</h1>
 
             <h1 className="text-sm md:text-4xl">ALL</h1>
           </div>
-
-          <div className="grid grid-cols-2 gap-1 md:gap-8">
+          
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-8">
             {/* Product placeholders */}
             {Array.from({ length: 6 }).map((_, index) => (
               <Link to="/product" key={index} className="group">

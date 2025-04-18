@@ -19,7 +19,7 @@ const Header = () => {
       className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 group 
         ${isHomePage ? 'bg-transparent hover:bg-white' : 'bg-white border-b border-gray-200'}`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-1 flex justify-between items-center">
         {/* Logo */}
         <Link 
         to="/" 
@@ -76,7 +76,7 @@ const Header = () => {
           <Link 
             to="/login" 
             aria-label="Login" 
-            className={`transition-colors duration-300 
+            className={`transition-colors duration-300 hidden 
               ${textColor} ${isHomePage ? 'group-hover:text-black hover:!text-gray-600' : hoverColor}`}
           >
             <User size={20} />
